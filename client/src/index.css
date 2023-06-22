@@ -1,0 +1,403 @@
+body{
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #d3d5d5;
+  cursor: default;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 55px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.title{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-family: 'Gravitas One', cursive;
+  text-shadow: 2px 2px #bababa;
+  margin-right: 60px;
+  font-size: 28px;
+}
+
+.title span{
+  color: #be0e0e;
+  text-shadow: 2px 2px #000;
+}
+
+.navbar{
+  height: 65px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  border: 1px solid;
+}
+
+.navbar a{
+  color: #000000;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Bungee', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.homeImg{
+  margin-left: 100px;
+  position: absolute;
+  top: 280px;
+}
+
+.home img{
+  width: 100%;
+  filter: blur(4px);
+}
+
+.homeImg h2{
+  font-size: 35px;
+  text-shadow: 1px 1px #ffffff;
+  margin: 0;
+}
+
+.homeBtn1{
+  margin-top: 10px;
+  height: 35px;
+  width: 120px;
+  background-color: #be0e0e;
+  border: none;
+  color: #ffffff;
+  padding: 7px;
+  border-radius: 3px;
+  transition: all 100ms linear;
+  margin-right: 10px;
+}
+
+.homeBtn1:hover{
+  background-color: #a40c0c;
+}
+
+.homeBtn2{
+  height: 35px;
+  width: 120px;
+  padding: 7px;
+  border-radius: 3px;
+  transition: all 100ms linear;
+  margin-right: 10px;
+  border: 2px solid #be0e0e;
+  color: #be0e0e;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+.homeBtn2:hover{
+  background-color: #e4e4e4;
+  color: #a40c0c;
+  border: 2px solid #a40c0c;
+}
+
+.homeInfo{
+  background-color: #a40c0c;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid black;
+}
+
+.hInfo1{
+  height: 210px;
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.hInfo1 h4{
+  text-decoration: underline;
+}
+
+.about{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.aboutInfo1{
+  height: 270px;
+  grid-row: 1/2;
+  padding: 30px 80px 10px;
+  line-height: 25px;
+  background-color: #cf9090;
+}
+
+.aboutInfo2{
+  height: 270px;
+  grid-row: 2/3;
+  background-color: #ffffff;
+  background-image: url(http://www.csszengarden.com/214/gridlines.png);
+  padding: 30px 80px 10px;
+  line-height: 25px;
+}
+
+.aboutInfo3{
+  height: 270px;
+  grid-row: 3/4;
+  padding: 30px 80px 10px;
+  line-height: 25px;
+  background-color: #cf9090;
+}
+
+.infoLink{
+  text-decoration: underline;
+  color: #640909;
+  transition: all 150ms linear;
+}
+
+.infoLink:hover{
+  color: #cb1616;
+}
+
+.nurses{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 35px;
+}
+
+.profileCards{
+  height: 300px;
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  transition: all 200ms linear;
+  border: 1px solid;
+}
+
+.profileCards img{
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.profileCards:hover{
+  background-color: #be0e0e;
+}
+
+.nurseProfile{
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+.profilePic img{
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.profileInfo span{
+  font-weight: 600;
+}
+
+.backButton{
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: #be0e0e;
+  transition: all 150ms linear;
+  color: #ffff;
+}
+
+.backButton:hover{
+  background-color: #a40c0c;
+}
+
+.search{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.searchBar{
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.searchBar:focus{
+  background-color: #dc9b9bcf;
+}
+
+.searchForm button{
+  height: 30px;
+  width: 50px;
+  margin-left: 5px;
+  border-radius: 10px;
+  transition: all 150ms linear;
+  background-color: #be0e0e;
+  color: #ffffff;
+}
+
+.searchForm button:hover{
+  background-color: #a40c0c;
+}
+
+.contactInfo{
+  text-align: center;
+  background-color: #be0e0e;
+  box-shadow: 0px 0px 10px 3px black;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.contactInfo h1{
+  padding-top: 20px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.contactList{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.contact1{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #ffff;
+  border-radius: 100px;
+  border: 2px solid;
+  padding: 5px 10px;
+  line-height: 15px
+}
+
+.contact2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #ffff;
+  border-radius: 100px;
+  border: 2px solid;
+  padding: 5px 10px;
+  line-height: 15px;
+}
+
+.contact3{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: #ffff;
+  border-radius: 100px;
+  border: 2px solid;
+  padding: 5px 15px;
+  line-height: 15px;
+}
+
+
+@media only screen and (max-width: 414px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 0;
+    position:sticky;
+  }
+
+  .navbar h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .homeImg{
+    margin-left: 25px;
+    position: absolute;
+    top: 220px;
+  }
+  
+  .home img{
+    width: 100%;
+    filter: blur(4px);
+  }
+  
+  .homeImg h2{
+    font-size: 30px;
+    text-shadow: 1px 1px #ffffff;
+    margin: 0;
+  }
+  
+  .homeInfo{
+    background-color: #a40c0c;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid black;
+  }
+  
+  .homeInfo div{
+    margin: 10px;
+    width: 300px;
+  }
+
+  .about{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about div{
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .contactList{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactList div{
+    margin: 10px;
+  }
+
+}
