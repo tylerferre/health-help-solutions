@@ -3,6 +3,8 @@ const app = express()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const path = require('path')
+require('dotenv').config()
+uri = process.env.URI
 
 // Middleware
 app.use(express.json())
@@ -10,7 +12,8 @@ app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, "client", 'dist')))
 
 // Connect to DB
-mongoose.connect('mongodb+srv://tylerferre:hXq45dJcvmwJkGBN@cluster0.fvepsva.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true})
+mongoose.connect(
+    uri, {useNewUrlParser: true})
 .then(()=> console.log('Connected to db'))
 .catch(err => console.log(err))
 
