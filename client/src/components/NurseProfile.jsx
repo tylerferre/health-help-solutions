@@ -9,7 +9,7 @@ const NurseProfile = () => {
 
     const {nurseId} = useParams()
     const foundNurse = contextData.nurseData.find(item => item._id === nurseId)
-
+console.log(foundNurse)
     return(
         <div className="nurseProfile">
             <div className="profilePic">
