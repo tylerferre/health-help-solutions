@@ -10,7 +10,7 @@ app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, "client", 'dist')))
 
 // Connect to DB
-mongoose.connect('mongodb://localhost:27017/health-help-db', {useNewUrlParser: true})
+mongoose.connect('mongodb+srv://tylerferre:hXq45dJcvmwJkGBN@cluster0.fvepsva.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true})
 .then(()=> console.log('Connected to db'))
 .catch(err => console.log(err))
 
